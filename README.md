@@ -23,7 +23,7 @@ If you are new to Elixir, or if you've been working to learn it but sometimes fe
 
 I've built the course that I would have wanted to take when I was learning Elixir and Phoenix. A course that explains the concepts and how they're implemented in the best order for you to learn and deeply understand them.
 
-#### What you’ll learn
+#### What you'll learn
 
 - Think with a Functional Programming mindset
 - Use Phoenix to build compelling and FAST web apps
