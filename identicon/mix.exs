@@ -21,8 +21,19 @@ defmodule Identicon.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      {:egd, github: "erlang/egd", manager: :rebar3}
+      # {:percept, github: "erlang/percept"}
     ]
   end
+
+  # DEPS ARE BROKEN! Edit deps/egd/src/egd_png.erl at the bottom with this to
+  # get it to work
+  # create_chunk(Bin,Z) when is_list(Bin) ->
+  #     create_chunk(list_to_binary(Bin),Z);
+  # create_chunk(Bin,_Z) when is_binary(Bin) ->
+  #     Sz = size(Bin)-4,
+  #     Crc = erlang:crc32(Bin),
+  #     <<Sz:32,Bin/binary,Crc:32>>.
+
+  # % End tainted
 end
